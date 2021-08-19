@@ -56,3 +56,68 @@ public class Main {
     System.out.println(obj.stname + " " + obj.staddr+" "+obj.stmarks);
   }
 }
+
+
+
+
+/*...............constructor example..........*/
+
+import java.util.Scanner;
+
+ 
+public class Main 
+{
+  
+ 
+public static void main (String[]args) 
+  {
+    
+    Scanner sc = new Scanner (System.in);
+    
+    int n;
+    
+ 
+ 
+    System.out.println ("Enter the school name:");
+    
+    String ch = sc.nextLine ();
+    
+    System.out.println ("enter the number of student:");
+    
+    n = sc.nextInt ();
+    
+    String name[] = new String[n];
+    
+    String id[] = new String[n];
+    
+ 
+ 
+    for (int i = 0; i < n; i++)
+      {
+	
+	
+    System.out.print ("Enter name of student " + (i + 1) + ": ");
+	
+    name[i] = sc.next ();
+	
+    System.out.print ("Enter  student id " + (i + 1) + ": ");
+	
+    id[i] = sc.next ();
+      
+ 
+} 
+ 
+ 
+ 
+      // String sn="SCHOOL";
+      for (int i = 0; i < n; i++)
+      {
+	
+ 
+System.out.println (name[i] + "\t" + id[i] + "\t" + ch);
+
+} 
+ 
+} 
+} 
+ 
